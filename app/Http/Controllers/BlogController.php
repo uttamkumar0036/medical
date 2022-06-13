@@ -51,21 +51,22 @@ class BlogController extends Controller
         return view('Fontent.SingleDepartment');
     }
 
-    public function Create()
+    public function Create(Request $request)
     {
+        
         return view('Fontent.Create');
     }
 
     public function View(Request $request)
     {
         //dd($request->input());
-        $data['Name']=$request->name;
+       $data['Name']=$request->name;
        $data['City']=$request->city;
        $data['Country']=$request->country;
 
        BlogModel::create($data);
 
-  
+       return redirect()->route('ViewData');
 
     // $client = new Client;
     // $client->Name = $request->name;
@@ -73,10 +74,19 @@ class BlogController extends Controller
     // $client->Counry = $request->country;
     // $client->save();
  
-     $y= BlogModel::all();
-     return view('Fontent.view',['x'=>$y]);
+    //  $data= BlogModel::all();
+    //  return view('Fontent.view',['x'=>$data]);
      
 //git config --global user.name “uttamkumar0036”
 //git config --global user.email “uttamkumar0036@gmail.com”
+//git remote add origin SHA256:1IsQfyKGRfDSu0P5bLaznnOkG9t7qBuar1uTCBpsIRs Uttam Kumar@DESKTOP-3K8R1F3
     }
+
+    public function ViewData()
+    {
+        $data=BlogModel::all();
+        return view('Fontent.view',['x'=>$data]);
+    }
+
+
 }

@@ -11,7 +11,7 @@
 				<div class="col-lg-6">
 					<div class="text-lg-right top-right-bar mt-2 mt-lg-0">
 						<a href="tel:+23-345-67890" >
-							<a class="nav-link" href="{{route('Create')}}"  style="color: aliceblue;font-size:160%;font-family: 'Times New Roman', serif" style=""><b>Register...</b></a>
+							<a class="nav-link" href="{{route('ViewData')}}"  style="color: aliceblue;font-size:160%;font-family: 'Times New Roman', serif" style=""><b>Register...</b></a>
 						</a>
 					</div>
 				</div>

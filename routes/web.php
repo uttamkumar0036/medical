@@ -33,6 +33,7 @@ Route::get('/single_blog',[BlogController::class, 'SingleBlog'])->name('SingleBl
 Route::get('/single_department',[BlogController::class, 'SingleDepartment'])->name('SingleDepartment');
 Route::get('/create',[BlogController::class, 'create'])->name('Create');
 Route::post('/view','BlogController@View')->name('View');
+Route::get('/viewdata',[BlogController::class , 'ViewData'])->name('ViewData');
 
 
 //banckend route

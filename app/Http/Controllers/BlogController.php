@@ -84,8 +84,8 @@ class BlogController extends Controller
 
     public function ViewData()
     {
-        $data=BlogModel::all();
-        return view('Fontent.view',['x'=>$data]);
+        dd(BlogModel::all());
+       // return view('Fontent.view',['x'=>$data]);
     }
 
 

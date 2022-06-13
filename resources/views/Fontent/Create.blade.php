@@ -1,26 +1,5 @@
 @extends('Fontent.Master')
 @section('content')
-      {{--  <div class="col-md-6 col-md-offset-3"> 
-        <form action="{{route('View')}}" method="POST">
-            @csrf
-            <div class="form-group">
-                <label for="">Name  </label>
-                <input type="text" placeholder="Enter Name.." name="name">
-            </div>
-            <div class="form-group">
-                <label for="">City  </label>
-                <input type="text" placeholder="Enter City.." name="city">
-            </div>
-            <div class="form-group">
-                <label for="">Country  </label>
-                <input type="text" placeholder="Enter Country.." name="country">
-            </div>
-
-            <div class="form-group">
-               <button type="submit">Save</button>
-        </form>
-
-       </div> --}}
 
        <section class="vh-100" style="background-color: #eee;">
         <div class="container h-100">

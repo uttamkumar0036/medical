@@ -41,7 +41,7 @@
                     <td>{{$y->City}}</td>
                     <td>{{$y->Country}}</td>                              
                   </tr>
-                @endforeach
+          @endforeach
               </tbody>
             </table>
           </div>
